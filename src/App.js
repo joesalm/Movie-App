@@ -12,6 +12,10 @@ function App() {
   const actor1 = new ActorModel("Harrison", "Ford", "1942-07-13", "https://www.imdb.com/name/nm0000148/", "https://m.media-amazon.com/images/M/MV5BMTY4Mjg0NjIxOV5BMl5BanBnXkFtZTcwMTM2NTI3MQ@@._V1_.jpg");
   const actor2 = new ActorModel("Connelly", "Jennifer", "1970-12-12", "https://www.imdb.com/name/nm0000124/?ref_=nv_sr_srsg_0", "https://m.media-amazon.com/images/M/MV5BOTczNTgzODYyMF5BMl5BanBnXkFtZTcwNjk4ODk4Mw@@._V1_.jpg");
   
+
+  // const getAge = require('age-by-birthdate');
+  // console.log(getAge('1/17/1972'));
+
   arrOfActors = [actor1, actor2];
   
   console.log(arrOfActors);
@@ -43,6 +47,7 @@ function App() {
     <div className="App">
       <div>
         {fnames + ' '}
+        
       </div>
     </div>
   );
