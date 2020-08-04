@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+#Actor-Card {
+  width: 260px;
+  height: 300px;
+  background-color: lightskyblue ;
+  border-style: dotted;
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px;
+  font-style: italic;
+  font-family: fantasy;
+  color: blue;
+}
+
+#Actor-Pic {
+  /* border-top: 10px; */
+  width: 120px;
+  border: solid 3px red;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#Actor-Name {
+  text-decoration: none;
+  color: crimson;
+}
+
+
