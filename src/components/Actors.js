@@ -19,7 +19,7 @@ class Actors extends React.Component {
         <Container>
 
           <Row>
-            <Col sm="12" md="6" lg="4">
+          <Col sm="12" md="6" lg="4" xl="3">
 
                 {/* {arrOfActors[0].fname} */}
                 {/* <Actor/> */}
@@ -28,7 +28,7 @@ class Actors extends React.Component {
                 }
 
             </Col>
-            <Col sm="12" md="6" lg="4">
+            <Col sm="12" md="6" lg="4" xl="3">
                 {/* {arrOfActors[0].fname} */}
                 {/* <Actor/> */}
                 {arrOfActors.map((currentActor) =>
@@ -36,7 +36,7 @@ class Actors extends React.Component {
                 }
 
             </Col>
-            <Col sm="12" md="6" lg="4">
+            <Col sm="12" md="6" lg="4" xl="3">
                 {/* {arrOfActors[0].fname} */}
                 {/* <Actor/> */}
                 {arrOfActors.map((currentActor) =>
@@ -44,6 +44,14 @@ class Actors extends React.Component {
                 }
 
             </Col>
+            <Col sm="12" md="6" lg="4" xl="3">
+                {/* {arrOfActors[0].fname} */}
+                {/* <Actor/> */}
+                {arrOfActors.map((currentActor) =>
+                  <div > <Actor CurrentActor={currentActor} /> </div>)
+                }
+
+            </Col>            
           </Row>
 
         </Container>
