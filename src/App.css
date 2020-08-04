@@ -64,3 +64,29 @@
 }
 
 
+#form {background-color: lightcoral;
+  height: 80px;
+  width: 600px;
+  border: solid 2px blue;
+  margin: 40px;
+  padding: 20px;
+
+}
+
+#site-bgcolor {
+  background-color: yellow;
+  margin: 30px;
+  border-radius: 100px;
+  border: solid 30px blue;
+}
+
+#body {
+  background-color: lightgoldenrodyellow;
+}
+
+
+#search-input {
+  width: 190px;
+  height: 30px;
+  margin-left: 10px;
+}

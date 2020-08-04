@@ -8,8 +8,22 @@ import Actor from './Actor';
 class Actors extends React.Component {
   constructor(props) {
     super(props);
-  }
 
+    this.state = {
+      inputValueToSearch: ""
+    }
+
+    // this.updateSearchName = this.updateSearchName.bind(this);
+
+    }
+
+  //   function updateSearchName(event) {
+  //     this.setState ({
+  //       inputValueToSearch: event.target.value
+  //     });
+
+  // }
+  
   render() {
 
     const arrOfActors = this.props.arrOfActors;
@@ -25,15 +39,16 @@ class Actors extends React.Component {
     });
 
     return (
-      <div>
+      <div id="site-bgcolor">
 
         <div id="form">
           <form>
             <fieldset>
               <label for="Search"> Search by name: </label>
-              <input if="search-btn" />
-
-              <button name="search-btn" type="button" value="Search" />
+              {/* <input type="text" id="search-btn" onChange={e => this.inputValueToSearch(e.target.value)} /> */}
+              <input type="text" id="search-btn" // onChange={updateSearchName}
+               />
+              {/* <button id="search-btn" name="search-btn" type="button" value="Search"></button> /> */}
             </fieldset>
           </form>
         </div>
