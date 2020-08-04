@@ -13,62 +13,24 @@ class Actors extends React.Component {
   render() {
     const arrOfActors = this.props.arrOfActors;
 
+    const cards = arrOfActors.map((currentActor) => {
+      return <div >
+                <Col
+                //  xs={12} sm={6} md={4} lg={3}
+                >
+                  <Actor CurrentActor={currentActor} key={currentActor} /> 
+                </Col>
+             </div>
+   });
+
     return (
 
       <div>
-        <Container>
-
+        <Container fluid>
           <Row>
-          <Col sm="12" md="6" lg="4" xl="3">
-
-                {/* {arrOfActors[0].fname} */}
-                {/* <Actor/> */}
-                {arrOfActors.map((currentActor) =>
-                  <div > <Actor CurrentActor={currentActor} /> </div>)
-                }
-
-            </Col>
-            <Col sm="12" md="6" lg="4" xl="3">
-                {/* {arrOfActors[0].fname} */}
-                {/* <Actor/> */}
-                {arrOfActors.map((currentActor) =>
-                  <div > <Actor CurrentActor={currentActor} /> </div>)
-                }
-
-            </Col>
-            <Col sm="12" md="6" lg="4" xl="3">
-                {/* {arrOfActors[0].fname} */}
-                {/* <Actor/> */}
-                {arrOfActors.map((currentActor) =>
-                  <div > <Actor CurrentActor={currentActor} /> </div>)
-                }
-
-            </Col>
-            <Col sm="12" md="6" lg="4" xl="3">
-                {/* {arrOfActors[0].fname} */}
-                {/* <Actor/> */}
-                {arrOfActors.map((currentActor) =>
-                  <div > <Actor CurrentActor={currentActor} /> </div>)
-                }
-
-            </Col>            
+            {cards}
           </Row>
-
         </Container>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       </div>
     )
@@ -76,3 +38,10 @@ class Actors extends React.Component {
 }
 
 export default Actors;
+
+
+                // {/* {arrOfActors[0].fname} */}
+                // {/* <Actor/> */}
+                // {arrOfActors.map((currentActor) =>
+                //   <div > <Actor CurrentActor={currentActor} /> </div>)
+                // }

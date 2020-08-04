@@ -8,7 +8,7 @@ function App() {
 
   var arrOfActors=[];
   
-  const actor1 = new ActorModel("Harrison", "Ford", "1942-07-13", "https://m.media-amazon.com/images/M/MV5BMTY4Mjg0NjIxOV5BMl5BanBnXkFtZTcwMTM2NTI3MQ@@._V1_.jpg","https://www.imdb.com/name/nm0000148/");
+  const actor1 = new ActorModel("Ford", "Harrison", "1942-07-13", "https://m.media-amazon.com/images/M/MV5BMTY4Mjg0NjIxOV5BMl5BanBnXkFtZTcwMTM2NTI3MQ@@._V1_.jpg","https://www.imdb.com/name/nm0000148/");
   const actor2 = new ActorModel("Connelly", "Jennifer", "1970-12-12", "https://m.media-amazon.com/images/M/MV5BOTczNTgzODYyMF5BMl5BanBnXkFtZTcwNjk4ODk4Mw@@._V1_.jpg", "https://www.imdb.com/name/nm0000124/?ref_=nv_sr_srsg_0");
   const actor3 = new ActorModel("Guinness", "Alec", "1914-04-02", "https://m.media-amazon.com/images/M/MV5BMTIxMTA5OTI2M15BMl5BanBnXkFtZTYwNjEwNjU2._V1_.jpg", "https://www.imdb.com/name/nm0000027/?ref_=nv_sr_srsg_0");
   const actor4 = new ActorModel("Reeve", "Christopher", "1952-09-25", "https://m.media-amazon.com/images/M/MV5BMjE1MDYwNjQxMF5BMl5BanBnXkFtZTcwNDE4NzU3MQ@@._V1_.jpg","https://www.imdb.com/name/nm0001659/?ref_=fn_al_nm_1");
