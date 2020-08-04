@@ -1,9 +1,8 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import ActorModel from './data-model/ActorModel'
-
-
+import ActorModel from './data-model/ActorModel';
+import Actors from './components/Actors';
 
 function App() {
 
@@ -28,6 +27,7 @@ function App() {
       console.log(element); // printing the actors / actress to the log with all the details for each and every one of them.
       // console.log(element.fname);
       fnames.push(element.fname); // just for fun it uses to print only the first names of the actors or actresses.
+      console.log(element.Age()); // calculate the age.
       // console.log(fnames.length);
     });
     // for(let i in actor1) {
@@ -46,8 +46,10 @@ function App() {
   return (
     <div className="App">
       <div>
-        {fnames + ' '}
-        
+        {/* {fnames + ' '} */}
+        <div>
+          <Actors arrOfActors1= {arrOfActors} />
+        </div>
       </div>
     </div>
   );

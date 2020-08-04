@@ -4,12 +4,18 @@ class ActorModel {
         this.lname = lname;
         this.birthdate = birthdate;
         this.image = image;
-        this.imdbLink  = imdbLink;
+        this.imdbLink = imdbLink;
     }
 
     Age () {
-        return 10;
+        const getAge = require('age-by-birthdate');
+        console.log(getAge(this.birthdate));
+        return getAge(this.birthdate);
     }
+
+
+
+    
 }
 
 export default ActorModel;
