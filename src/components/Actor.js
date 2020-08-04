@@ -6,9 +6,11 @@ class Actor extends React.Component {
     super(props);
   }
   
+  
   render() {
+    const currActor = this.props.CurrentActor;
     return (
-      <div>App Comp</div>
+      <div>{currActor.fname}</div>
     );
   }
 }

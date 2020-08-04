@@ -48,7 +48,7 @@ function App() {
       <div>
         {/* {fnames + ' '} */}
         <div>
-          <Actors arrOfActors1= {arrOfActors} />
+          <Actors arrOfActors= {arrOfActors} />
         </div>
       </div>
     </div>
