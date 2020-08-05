@@ -20,17 +20,17 @@ function App() {
 
   arrOfActors = [actor1, actor2, actor3, actor4, actor5, actor6];
   
-  console.log(arrOfActors);
+  // console.log(arrOfActors);
   // console.log(actor1);
-  const fnames = [];
+  // const fnames = [];
   
   const renderActor = () => {
 
     arrOfActors.forEach(element => {
-      console.log(element); // printing the actors / actress to the log with all the details for each and every one of them.
+      // console.log(element); // printing the actors / actress to the log with all the details for each and every one of them.
       // console.log(element.fname);
-      fnames.push(element.fname); // just for fun it uses to print only the first names of the actors or actresses.
-      console.log(element.Age()); // calculate the age.
+      // fnames.push(element.fname); // just for fun it uses to print only the first names of the actors or actresses.
+      // console.log(element.Age()); // calculate the age.
       // console.log(fnames.length);
     });
     // for(let i in actor1) {

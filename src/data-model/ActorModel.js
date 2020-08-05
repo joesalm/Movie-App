@@ -9,7 +9,7 @@ class ActorModel {
 
     Age () {
         const getAge = require('age-by-birthdate');
-        console.log(getAge(this.birthdate));
+        // console.log(getAge(this.birthdate));
         return getAge(this.birthdate);
     }
 

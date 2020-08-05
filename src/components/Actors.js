@@ -21,17 +21,21 @@ class Actors extends React.Component {
       this.setState ({
         inputValueToSearch: event.target.value
       });
-
+    // console.log(event.target.value);
   }
   
   render() {
 
     const arrOfActors = this.props.arrOfActors;
+    const filterActors = arrOfActors.filter((Actor)=>{
+      // return Actor.fname.includes("Ford")
+      return Actor.fname.toUpperCase().includes(this.state.inputValueToSearch.toUpperCase())
+    })
 
-    const cards = arrOfActors.map((currentActor) => {
+    const cards = filterActors.map((currentActor) => {
       return <div >
         <Col
-        //  xs={12} sm={6} md={4} lg={3}
+         xs={12} sm={6} md={4}
         >
           <Actor CurrentActor={currentActor} key={currentActor} />
         </Col>
@@ -55,7 +59,8 @@ class Actors extends React.Component {
 
 
 
-        <Container fluid>
+        {/* <Container fluid> */}
+        <Container>          
           <Row>
             {cards}
           </Row>
