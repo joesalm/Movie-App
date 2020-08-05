@@ -13,16 +13,16 @@ class Actors extends React.Component {
       inputValueToSearch: ""
     }
 
-    // this.updateSearchName = this.updateSearchName.bind(this);
+    this.updateSearchName = this.updateSearchName.bind(this);
 
     }
 
-  //   function updateSearchName(event) {
-  //     this.setState ({
-  //       inputValueToSearch: event.target.value
-  //     });
+    updateSearchName(event) {
+      this.setState ({
+        inputValueToSearch: event.target.value
+      });
 
-  // }
+  }
   
   render() {
 
@@ -44,10 +44,10 @@ class Actors extends React.Component {
         <div id="form">
           <form>
             <fieldset>
-              <label for="Search"> Search by name: </label>
-              {/* <input type="text" id="search-btn" onChange={e => this.inputValueToSearch(e.target.value)} /> */}
-              <input type="text" id="search-btn" // onChange={updateSearchName}
-               />
+              <label htmlFor="Search"> Search by name: </label>
+              <input type="text" id="search-btn" value={this.state.inputValueToSearch} onChange= {(e) => this.updateSearchName(e)} />
+              {/* <input type="text" id="search-btn" // onChange={updateSearchName} */}
+               {/* /> */}
               {/* <button id="search-btn" name="search-btn" type="button" value="Search"></button> /> */}
             </fieldset>
           </form>
